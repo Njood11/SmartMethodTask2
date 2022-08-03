@@ -1,0 +1,51 @@
+<html>
+    <head>
+      <script src="https://cdn.jsdelivr.net/gh/makeabilitylab/p5js/_libraries/serial.js"></script>
+        <meta charset="UTF-8">
+        <title>Speech to text</title>
+         <style> 
+        body{
+            font-family: arial;
+            font-size: 16px;
+            background:linear-gradient(to right bottom, #8fb7e5, #031f6a);
+            color: #000;
+            display: flex;
+           justify-content: center;
+         }
+        
+        .voice_to_text{
+          width: 600px;
+          text-align: center;
+        }
+        h1{
+            color: #fff;
+            font-size: 50px;
+        }
+        #convert_text{
+          width: 100%;
+          height: 200px;
+          border-radius: 10px;
+          padding: 10px;
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+        button{
+            padding: 12px 50px;
+          background: #ffffff;
+           color: rgb(19, 18, 18);
+          font-size: 18px;
+           cursor: pointer;
+          border-radius: 5px;
+        }
+        </style>
+    </head>
+    <body>
+    <div class="voice_to_text">
+    <h1>Speech To Text</h1>
+    <textarea id="convert_text"></textarea>
+    <button id="click_to_convert"  onclick="Send()" >Start</button>
+ 
+    </div>
+    <script type="text/javascript" src="fun.js"></script>
+    </body>
+</html>
