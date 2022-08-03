@@ -1,0 +1,1 @@
+# SmartMethodTask2
